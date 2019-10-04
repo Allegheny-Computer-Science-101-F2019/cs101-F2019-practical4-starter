@@ -31,12 +31,12 @@ to all of the requirements in the [Google Java Style
 Guide](https://google.github.io/styleguide/javaguide.html).
 
 The source code in the `CaesarCipher.java` file must also pass additional tests
-set by the [GatorGrader tool](https://github.com/GatorEducator/gatorgrader).
-For instance, GatorGrader will check to ensure that `CaesarCipher` has
-`println` statements that produce exactly four lines of output, as would be the
-case for a correctly implemented versin of Code Fragment 3.8. More details
-about the GatorGrader checks are included later in this document and in the
-assignment sheet.
+set by the [GatorGrader tool](https://github.com/GatorEducator/gatorgrader). For
+instance, GatorGrader will check to ensure that `CaesarCipher` has `println`
+statements that produce exactly four lines of output, as would be the case for a
+correctly implemented version of Code Fragment 3.8. More details about the
+GatorGrader checks are included later in this document and in the assignment
+sheet.
 
 ## Continuous Learning
 
