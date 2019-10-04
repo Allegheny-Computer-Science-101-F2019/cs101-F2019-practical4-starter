@@ -34,7 +34,6 @@ public class CaesarCipher {
   /** The array used for decryption. **/
   protected char[] decoder = new char[26];
 
-  /** Constructor that initializes the encryption and decryption arrays. */
   public CaesarCipher(int rotation) {
     // TODO: Make sure that you understand how and why
     // this constructor uses modular arithmetic
@@ -46,7 +45,6 @@ public class CaesarCipher {
     }
   }
 
-  /** Returns a String representing encrypted message. */
   public String encrypt(String message) {
     // use the encoder array
     // TODO: Add the additional line of required code
@@ -54,7 +52,6 @@ public class CaesarCipher {
     return "FINISH THIS METHOD!";
   }
 
-  /** Returns a decrypted message given encrypted secret. */
   public String decrypt(String secret) {
     // use the encoder array
     // TODO: Add the additional line of required code
@@ -62,14 +59,12 @@ public class CaesarCipher {
     return "FINISH THIS METHOD!";
   }
 
-  /** Returns transformation of original String using given code. */
   private String transform(String original, char[] code) {
     // TODO: convert the original string to an array of characters
     // TODO: Add all of the required code
     return new String("");
   }
 
-  /** Simple main method for demonstrating the Caesar cipher. */
   public static void main(String[] args) {
     CaesarCipher cipher = new CaesarCipher(3);
     System.out.println("Encryption code = " + new String(cipher.encoder));
