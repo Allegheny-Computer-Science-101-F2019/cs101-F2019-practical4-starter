@@ -20,27 +20,23 @@
 ## Introduction
 
 This assignment requires a programmer to implement and test a Java program,
-called `BubbleSort`, that will produce four lines of output. More details about
-the source code for a similar program are provided in the discussion of array
-sorting in Section 3.1.2 of the textbook. Details about performing a shallow
-copy of an array are available in Section 3.6 of the textbook. Please note that
-this assignment will also require you to read and extend another Java class that
-contains a test suite. The programmer is also responsible for learning how to
-run and extend a test suite written in the JUnit testing framework, as explained
-in Section 1.9. As verified by
-[Checkstyle](https://github.com/checkstyle/checkstyle), the source code for the
-`BubbleSort.java` and `TestBubbleSort.java` files must adhere to all of the
-requirements in the [Google Java Style
+called `CaesarCipher`, that will produce four lines of output when it performs
+both encryption and decryption. Please note that this assignment will also
+require you to read and extend another Java class that contains a test suite.
+The programmer is also responsible for learning how to run and extend a test
+suite written in the JUnit testing framework, as explained in Section 1.9. As
+verified by [Checkstyle](https://github.com/checkstyle/checkstyle), the source
+code for the `CaesarCipher.java` and `TestCaesarCipher.java` files must adhere
+to all of the requirements in the [Google Java Style
 Guide](https://google.github.io/styleguide/javaguide.html).
 
-The source code in the `BubbleSort.java` file must also pass additional tests
+The source code in the `CaesarCipher.java` file must also pass additional tests
 set by the [GatorGrader tool](https://github.com/GatorEducator/gatorgrader).
-For instance, GatorGrader will check to ensure that `BubbleSort` has `println`
-statements that produce exactly four lines of output. GatorGrader will also
-check that your program performs the correct sorting of an array. Please note
-that you should not copy in a new implementation of `BubbleSort` and instead
-work to fix the provided solution. More details about the GatorGrader checks
-are included later in this document and in the assignment sheet.
+For instance, GatorGrader will check to ensure that `CaesarCipher` has
+`println` statements that produce exactly four lines of output, as would be the
+case for a correctly implemented versin of Code Fragment 3.8. More details
+about the GatorGrader checks are included later in this document and in the
+assignment sheet.
 
 ## Continuous Learning
 
@@ -69,9 +65,9 @@ questions.
 To do well on this assignment, you should also review Chapter 3 of the course
 textbook, paying close attention to Sections 3.1 and 3.6 and the source code on
 page 111. Note that the source code on page 111 does not provide an
-implementation of `BubbleSort`. However, it does furnish an implementation of a
+implementation of `CaesarCipher`. However, it does furnish an implementation of a
 sorting algorithm that produces the same output as would a correct
-implementation of `BubbleSort`. Please see the course instructor or one of the
+implementation of `CaesarCipher`. Please see the course instructor or one of the
 student technical leaders if you have questions about any of these reading
 assignments.
 
@@ -221,25 +217,25 @@ your submission must pass the following checks that
 assesses:
 
 - Repository has at least 5 commit(s)
-- The BubbleSort.java in src/main/java/practicalthree has at least 3 multiple-line Java comment(s)
-- The BubbleSort.java in src/main/java/practicalthree has at least 3 of the `System.arraycopy` fragment
-- The BubbleSort.java in src/main/java/practicalthree has at least 4 of the `java.util.Arrays.toString` fragment
-- The BubbleSort.java in src/main/java/practicalthree has at least 4 of the `println(` fragment
-- The BubbleSort.java in src/main/java/practicalthree has exactly 0 of the `Add Your Name Here` fragment
-- The BubbleSort.java in src/main/java/practicalthree has exactly 0 of the `TODO` fragment
-- The BubbleSort.java in src/main/java/practicalthree has exactly 1 of the `package practicalthree` fragment
-- The TestBubbleSort.java in src/test/java/practicalthree has at least 1 multiple-line Java comment(s)
-- The TestBubbleSort.java in src/test/java/practicalthree has at least 12 of the `@Test` fragment
-- The TestBubbleSort.java in src/test/java/practicalthree has exactly 0 of the `Add Your Name Here` fragment
-- The TestBubbleSort.java in src/test/java/practicalthree has exactly 0 of the `TODO` fragment
-- The TestBubbleSort.java in src/test/java/practicalthree has exactly 1 of the `package practicalthree` fragment
+- The CaesarCipher.java in src/main/java/practicalthree has at least 3 multiple-line Java comment(s)
+- The CaesarCipher.java in src/main/java/practicalthree has at least 3 of the `System.arraycopy` fragment
+- The CaesarCipher.java in src/main/java/practicalthree has at least 4 of the `java.util.Arrays.toString` fragment
+- The CaesarCipher.java in src/main/java/practicalthree has at least 4 of the `println(` fragment
+- The CaesarCipher.java in src/main/java/practicalthree has exactly 0 of the `Add Your Name Here` fragment
+- The CaesarCipher.java in src/main/java/practicalthree has exactly 0 of the `TODO` fragment
+- The CaesarCipher.java in src/main/java/practicalthree has exactly 1 of the `package practicalthree` fragment
+- The TestCaesarCipher.java in src/test/java/practicalthree has at least 1 multiple-line Java comment(s)
+- The TestCaesarCipher.java in src/test/java/practicalthree has at least 12 of the `@Test` fragment
+- The TestCaesarCipher.java in src/test/java/practicalthree has exactly 0 of the `Add Your Name Here` fragment
+- The TestCaesarCipher.java in src/test/java/practicalthree has exactly 0 of the `TODO` fragment
+- The TestCaesarCipher.java in src/test/java/practicalthree has exactly 1 of the `package practicalthree` fragment
 - The command `gradle -q --console plain run` executes correctly
 - The command `gradle build` executes correctly
 - The command output has exactly 2 of the `After` fragment
 - The command output has exactly 2 of the `Before` fragment
 - The command output has exactly 4 lines
-- The file BubbleSort.java exists in the src/main/java/practicalthree directory
-- The file TestBubbleSort.java exists in the src/test/java/practicalthree directory
+- The file CaesarCipher.java exists in the src/main/java/practicalthree directory
+- The file TestCaesarCipher.java exists in the src/test/java/practicalthree directory
 
 If [GatorGrader's](https://github.com/GatorEducator/gatorgrader) automated
 checks pass correctly, the tool will produce the output like the following in
