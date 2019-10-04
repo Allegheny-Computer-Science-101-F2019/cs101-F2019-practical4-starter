@@ -186,12 +186,12 @@ programmer and the date on which you ran the program.
 Configured GatorGradle 0.4.4
 
 > Task :run
-Before: [C, E, B, D, A, I, J, L, K, H, G, F]
-After : [A, B, C, D, E, F, G, H, I, J, K, L]
-Before: [1, 2, 4, 4, 9, 10, -10, 3, 8, 7, 20, 0]
-After : [-10, 0, 1, 2, 3, 4, 4, 7, 8, 9, 10, 20]
+Encryption code = DEFGHIJKLMNOPQRSTUVWXYZABC
+Decryption code = XYZABCDEFGHIJKLMNOPQRSTUVW
+Secret:  WKH HDJOH LV LQ SODB; PHHW DW MRH'V DW 2:00 SP.
+Message: THE EAGLE IS IN PLAY; MEET AT JOE'S AT 2:00 PM.
 
-BUILD SUCCESSFUL in 940ms
+BUILD SUCCESSFUL in 763ms
 2 actionable tasks: 1 executed, 1 up-to-date
 ```
 
@@ -199,10 +199,10 @@ Running the command `gradle -q --console plain run` will suppress the display of
 Gradle's diagnostic information and produce output like the following.
 
 ```
-Before: [C, E, B, D, A, I, J, L, K, H, G, F]
-After : [A, B, C, D, E, F, G, H, I, J, K, L]
-Before: [1, 2, 4, 4, 9, 10, -10, 3, 8, 7, 20, 0]
-After : [-10, 0, 1, 2, 3, 4, 4, 7, 8, 9, 10, 20]
+Encryption code = DEFGHIJKLMNOPQRSTUVWXYZABC
+Decryption code = XYZABCDEFGHIJKLMNOPQRSTUVW
+Secret:  WKH HDJOH LV LQ SODB; PHHW DW MRH'V DW 2:00 SP.
+Message: THE EAGLE IS IN PLAY; MEET AT JOE'S AT 2:00 PM.
 ```
 
 ## Automated Checks with GatorGrader
@@ -212,26 +212,26 @@ your submission must pass the following checks that
 [GatorGrader](https://github.com/GatorEducator/gatorgrader) automatically
 assesses:
 
-- Repository has at least 5 commit(s)
-- The CaesarCipher.java in src/main/java/practicalthree has at least 3 multiple-line Java comment(s)
-- The CaesarCipher.java in src/main/java/practicalthree has at least 3 of the `System.arraycopy` fragment
-- The CaesarCipher.java in src/main/java/practicalthree has at least 4 of the `java.util.Arrays.toString` fragment
-- The CaesarCipher.java in src/main/java/practicalthree has at least 4 of the `println(` fragment
-- The CaesarCipher.java in src/main/java/practicalthree has exactly 0 of the `Add Your Name Here` fragment
-- The CaesarCipher.java in src/main/java/practicalthree has exactly 0 of the `TODO` fragment
-- The CaesarCipher.java in src/main/java/practicalthree has exactly 1 of the `package practicalthree` fragment
-- The TestCaesarCipher.java in src/test/java/practicalthree has at least 1 multiple-line Java comment(s)
-- The TestCaesarCipher.java in src/test/java/practicalthree has at least 12 of the `@Test` fragment
-- The TestCaesarCipher.java in src/test/java/practicalthree has exactly 0 of the `Add Your Name Here` fragment
-- The TestCaesarCipher.java in src/test/java/practicalthree has exactly 0 of the `TODO` fragment
-- The TestCaesarCipher.java in src/test/java/practicalthree has exactly 1 of the `package practicalthree` fragment
-- The command `gradle -q --console plain run` executes correctly
-- The command `gradle build` executes correctly
-- The command output has exactly 2 of the `After` fragment
-- The command output has exactly 2 of the `Before` fragment
+- The CaesarCipher.java in src/main/java/practicalfour has at least 1 of the `new CaesarCipher(3)` fragment
+- The CaesarCipher.java in src/main/java/practicalfour has at least 1 of the `toCharArray` fragment
+- The CaesarCipher.java in src/main/java/practicalfour has at least 4 of the `println(` fragment
+- The TestCaesarCipher.java in src/test/java/practicalfour has exactly 0 of the `Add Your Name Here` fragment
+- The command output has exactly 1 of the `MRH`V` fragment
 - The command output has exactly 4 lines
-- The file CaesarCipher.java exists in the src/main/java/practicalthree directory
-- The file TestCaesarCipher.java exists in the src/test/java/practicalthree directory
+- The command `gradle -q --console plain run` executes correctly
+- The CaesarCipher.java in src/main/java/practicalfour has exactly 0 of the `Add Your Name Here` fragment
+- The file CaesarCipher.java exists in the src/main/java/practicalfour directory
+- The CaesarCipher.java in src/main/java/practicalfour has at least 3 multiple-line Java comment(s)
+- The TestCaesarCipher.java in src/test/java/practicalfour has exactly 1 of the `package practicalfour` fragment
+- The TestCaesarCipher.java in src/test/java/practicalfour has at least 3 of the `@Test` fragment
+- The TestCaesarCipher.java in src/test/java/practicalfour has exactly 0 of the `TODO` fragment
+- The command output has exactly 1 of the `JOE`S` fragment
+- The TestCaesarCipher.java in src/test/java/practicalfour has at least 1 multiple-line Java comment(s)
+- The CaesarCipher.java in src/main/java/practicalfour has exactly 1 of the `package practicalfour` fragment
+- Repository has at least 5 commit(s)
+- The CaesarCipher.java in src/main/java/practicalfour has exactly 0 of the `TODO` fragment
+- The file TestCaesarCipher.java exists in the src/test/java/practicalfour directory
+- The command `gradle build` executes correctly
 
 If [GatorGrader's](https://github.com/GatorEducator/gatorgrader) automated
 checks pass correctly, the tool will produce the output like the following in
