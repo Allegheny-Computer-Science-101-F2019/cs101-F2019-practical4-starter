@@ -17,7 +17,7 @@ src/main:
     java:
         practicalfour/CaesarCipher.java:
             ConfirmFileExists
-            CountMultipleLineComments --language Java --count 3
+            CountMultipleLineComments --language Java --count 5
             MatchFileFragment --fragment "TODO" --count 0 --exact
             MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
             MatchFileFragment --fragment "package practicalfour" --count 1 --exact
