@@ -64,9 +64,9 @@ public class CaesarCipher {
 
   /** Returns transformation of original String using given code. */
   private String transform(String original, char[] code) {
-    char[] msg = original.toCharArray();
+    // TODO: convert the original string to an array of characters
     // TODO: Add all of the required code
-    return new String(msg);
+    return new String("");
   }
 
   /** Simple main method for demonstrating the Caesar cipher. */
