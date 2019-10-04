@@ -63,13 +63,9 @@ leader for your course, students are encouraged to search
 questions.
 
 To do well on this assignment, you should also review Chapter 3 of the course
-textbook, paying close attention to Sections 3.1 and 3.6 and the source code on
-page 111. Note that the source code on page 111 does not provide an
-implementation of `CaesarCipher`. However, it does furnish an implementation of a
-sorting algorithm that produces the same output as would a correct
-implementation of `CaesarCipher`. Please see the course instructor or one of the
-student technical leaders if you have questions about any of these reading
-assignments.
+textbook, paying close attention to Sections 3.1 and 3.6 and the source code in
+Code Fragment 3.8. Please see the course instructor or one of the student
+technical leaders if you have questions about any of these reading assignments.
 
 ## System Commands
 
